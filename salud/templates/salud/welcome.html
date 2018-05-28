@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<style type="text/css">
+		.jumbotron {
+		 	margin: 30px;
+		}
+	</style>
+	<style>
+body {
+    background-color: white;
+    background-image: url(https://png.pngtree.com/element_origin_min_pic/17/04/15/64c96b851777b39fcb064a5f88da0ac2.jpg);
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h1>{{saludo}}</h1>
+			</div>
+		</div>
+	</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../">Index</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="../welcome/">Bievenida <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="../info/">Informacion</a>
+      <a class="nav-item nav-link" href="../contact/">Contacto </a>
+      <a class="nav-item nav-link" href="../registro/">Regístrese</a>
+    </div>
+  </div>
+</nav>
+
+
+		<div class="row">
+			<div class="col-md-6">
+					<h1>{{desafio}}</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md-6">
+					<h1>{{motivacion}}</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+	</div>				
+</div>
+</body>
+</html>

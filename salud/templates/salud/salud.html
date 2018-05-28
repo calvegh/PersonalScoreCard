@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro completo</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<style type="text/css">
+		.jumbotron {
+		 	margin: 30px;
+
+		}
+	</style>
+	<style>
+body {
+    background-color: white;
+    background-image: url(https://png.pngtree.com/element_origin_min_pic/17/04/15/64c96b851777b39fcb064a5f88da0ac2.jpg);
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>Ya estás dentro!</h1>
+      </div>
+    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="../">Index</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="../welcome/">Bievenida <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="../info/">Informacion</a>
+      <a class="nav-item nav-link" href="../contact/">Contacto </a>
+      <a class="nav-item nav-link" href="../registro/">Regístrese</a>
+    </div>
+  </div>
+</nav>
+
+<!--
+Lo que haremos ahora será mostrar todos los resultados, los mostraremos en una tabla
+de html: el campo <table> indica el principio de la tabla
+Las filas se construyen a traves de <tr> y las columnas a travez de <td>
+lo que hacemos en el for es lo siguiente:
+Por cada par llave, valor del diccionario, se crea una columna donde se muestra
+el nombre de la llave y su valor.
+(las llaves son por ejemplo "nombre", "edad")
+(y los valores son el nombre de la persona o la edad de esta)
+-->
+<table>
+{% for value, key in ans.items %}
+  <tr>
+  
+  <td>{{value}}</td>
+  <td>{{key}}</td>
+
+  </tr>
+{% endfor %}
+
+<!-- Consejo: rellene el diccionaro, vea los resultados y vuelve a revisar el archivo
+ejemplo3/forms.py -->
+
+<table>
+	
+
+<h2>Gracias por inscribirse</h2>
+
+
+</body>
+</html>
